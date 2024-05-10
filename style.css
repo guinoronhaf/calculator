@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+:root {
+    --text: 'League Spartan';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--text);
+    font-size: 32px;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+}
+
+.body_theme1 {
+    background-color: hsl(222, 26%, 31%);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 310px;
+    padding: 30px 0px;
+}
+
+#theme_keys {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.theme_keys_theme1 {
+    color: white;
+}
+
+#theme_keys > #theme_keys_options {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    font-size: 0.4rem;
+}
+
+#theme_keys > #theme_keys_options > p {
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+#theme_keys > #theme_keys_options > #theme_keys_option_choices {
+    display: flex;
+    flex-direction: column;
+}
+
+#theme_keys > #theme_keys_options > #theme_keys_options_choices > #numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+#theme_keys > #theme_keys_options > #theme_keys_options_choices > #choices {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70px;
+    height: 25px;
+    border-radius: 40px;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.choices_theme1 {
+    background-color: hsl(223, 31%, 20%);
+}
+
+#theme_keys > #theme_keys_options > #theme_keys_options_choices > #choices > #slider {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.slider_theme1 {
+    background-color: hsl(6, 63%, 50%);
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100px;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.display_theme1 {
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.keyboard_theme1 {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-family: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.key_theme1 {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    border-bottom: 4px solid hsl(28, 16%, 65%);
+}
+
+.key_theme1:hover, .key_theme2:hover, .rd_theme1:hover, .equal_theme1:hover, .equal_theme2:hover {
+    filter: contrast(180%);
+}
+
+.rd_theme2:hover {
+    filter: saturate(250%);
+}
+
+.key_theme3:hover, .rd_theme3:hover, .equal_theme3:hover {
+    filter: saturate(250%);
+}
+
+.bigger {
+    width: 130px;
+}
+
+#kdel, #kreset {
+    font-size: 0.7rem;
+}
+
+.rd_theme1 {
+    background-color: hsl(225, 21%, 49%);
+    border-bottom: 4px solid hsl(224, 28%, 35%);
+    color: white;
+}
+
+#kequal {
+    font-size: 0.7rem;
+}
+
+.equal_theme1 {
+    background-color: hsl(6, 63%, 50%);
+    border-bottom: 4px solid hsl(6, 70%, 34%);
+    color: white;
+}
+
+/* THEME2 */
+
+.body_theme2 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.theme_keys_theme2 {
+    color: hsl(60, 10%, 19%);
+}
+
+.choices_theme2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.slider_theme2 {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.display_theme2 {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+.keyboard_theme2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.key_theme2 {
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    border-bottom: 4px solid hsl(35, 11%, 61%)
+}
+
+.rd_theme2 {
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    border-bottom: 4px solid hsl(185, 58%, 25%);
+}
+
+.equal_theme2 {
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+    border-bottom: 4px solid hsl(25, 99%, 27%);
+}
+
+/* THEME3 */
+
+.body_theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.theme_keys_theme3 {
+    color: hsl(52, 100%, 62%);
+}
+
+.choices_theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.slider_theme3 {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.display_theme3 {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+.keyboard_theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.key_theme3 {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    border-bottom: 4px solid hsl(290, 70%, 36%);
+}
+
+.rd_theme3 {
+    background-color: hsl(281, 89%, 26%);
+    color: white;
+    border-bottom: 4px solid hsl(285, 91%, 52%);
+}
+
+.equal_theme3 {
+    background-color: hsl(176, 100%, 44%);
+    color: hsl(198, 20%, 13%);
+    border-bottom: 4px solid hsl(177, 92%, 70%);
+}
+
+/* -=--=-=---=--=-=-=-=-=-=-=-=-=- */
+
+@media(min-width: 992px) {
+    body, html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #container {
+        width: 400px;
+        height: 80vh;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    #display {
+        height: 120px;
+    }
+
+    #keyboard {
+        gap: 20px;
+    }
+
+    .key {
+        width: 70px;
+        height: 50px;
+    }
+
+    .bigger {
+        width: 160px;
+    }
+}
